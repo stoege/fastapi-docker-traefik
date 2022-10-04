@@ -12,6 +12,9 @@ app = FastAPI(title="FastAPI, Docker, and Traefik")
 async def read_root():
     return await User.objects.all()
 
+@app.get("/hello")
+def read_root():
+    return {"hello": "world"}
 
 @app.on_event("startup")
 async def startup():
