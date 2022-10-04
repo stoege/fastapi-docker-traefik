@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "fastapi-docker-traefik"
+version = "0.1.0"
+description = ""
+authors = ["Daniel Stocker <mail@stoege.ch>"]
+readme = "README.md"
+packages = [{include = "fastapi_docker_traefik"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
